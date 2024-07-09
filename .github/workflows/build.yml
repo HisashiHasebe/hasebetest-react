@@ -93,10 +93,6 @@ jobs:
 
       - name: Generate
         run: npm run build
-      - name: Serve
-        run: npm install -g serve
-      - name: build
-        run: serve -s build
       - name: Zip artifact for upload
         run: cd ./build && zip ../../dist.zip . -r
       - name: Archive Production Artifact
