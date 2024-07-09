@@ -106,4 +106,4 @@ jobs:
         env:
           webhook_url: "https://hasebetest-child11.g.kuroco.app/direct/menu/github/"
           webhook_secret: "ad5dfa4778177b5781d61be019649111"
-          data: '{"single_zip":"0","domain":"hasebetest-child11.g.kuroco-front.app", "repository":"${{ github.repository }}", "run_id":"${{ github.run_id }}", "hash":"${{ github.sha }}"}'
+          data: '{"single_zip":"1","domain":"hasebetest-child11.g.kuroco-front.app", "repository":"${{ github.repository }}", "run_id":"${{ github.run_id }}", "hash":"${{ github.sha }}"}'
