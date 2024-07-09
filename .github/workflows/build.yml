@@ -46,13 +46,11 @@ jobs:
 
       - name: Generate
         run: npm run build
-      - name: Zip artifact for upload
-        run: cd ./build && zip ../../dist.zip . -r
       - name: Archive Production Artifact
         uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.get_branch.outputs.sha }}-${{ github.run_id }}
-          path: dist.zip
+          path: build
           retention-days: 1
       - name: Wait for Artifact download
         run: sleep 15
